@@ -1,0 +1,34 @@
+<div class="col-md-6 offset-md-3">
+<h3>Ajouter Produit </h3>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>Nom</label>
+        <input type="text" class="form-control" id="nom" [(ngModel)]="produit.nom" name="nom">
+    </div>
+    <div class="form-group">
+         <label>Description</label>
+         <textarea class="form-control" name="description" [(ngModel)]="produit.description"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Prix</label>
+        <input type="number" class="form-control" id="prix" [(ngModel)]="produit.prix" name="prix">
+    </div>
+    <div class="form-group">
+        <label>Image</label>
+        <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg" [(ngModel)]="produit.image" />
+    </div>
+    <div class="form-group">
+        <label>Quantite_Stock</label>
+        <input type="number" class="form-control" id="prix" [(ngModel)]="produit.qte_stock" name="prix">
+    </div>
+    <div class="form-group">
+        <label >Etat</label>
+        <input type="text" class="form-control" id="etat" [(ngModel)]="produit.etat" name="etat">
+
+    </div>
+    <button class="btn btn-success" type="submit">Valider</button>
+
+
+
+</form>
+</div>

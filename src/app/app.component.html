@@ -1,0 +1,32 @@
+
+  <nav class="navbar navbar-light bg-light justify-content-between">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+      <a routerLink="produits"  routerLinkActive="active" class="nav-link">Liste Des Produits</a>
+     </li>
+     <li class="nav-item">
+      <a routerLink="ajouter produit"  routerLinkActive="active" class="nav-link">Ajouter Produit </a>
+     </li>
+  </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+    <div class="container" id="content">
+  <router-outlet></router-outlet>
+</div>
+ 
+ 
+  <!-- Footer -->
+  <footer class="footer">
+      
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+       
+        <a class="text-dark" >ALL Rights Reserved 2021 @OLFA </a>
+      </div>
+  
+    
+    </footer>
+    <!-- Footer -->
+  

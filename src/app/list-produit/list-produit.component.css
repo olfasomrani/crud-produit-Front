@@ -1,0 +1,17 @@
+.container {
+    padding: 2rem 0rem;
+  }
+  
+  h4 {
+    margin: 2rem 0rem 1rem;
+  }
+ 
+  table, th, td {
+    border: 1px solid black;
+  }
+  body {
+    background: #dd5e89;
+    background: -webkit-linear-gradient(to left, #dd5e89, #f7bb97);
+    background: linear-gradient(to left, #dd5e89, #f7bb97);
+    min-height: 100vh;
+  }

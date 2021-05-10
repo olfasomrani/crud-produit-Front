@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="card">
+        <h1 class="text-center">Liste des Produits</h1>
+        <div class="card-body">
+            <table class="table table-striped">
+               
+                <thead>
+                    <th>Reference</th>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                    <th>Image</th>
+                    <th>Qte_Stock</th>
+                    <th>Etat</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of produits">
+                        <td>{{p.ref}}</td>
+                        <td>{{p.nom}}</td>
+                        <td>{{p.description}}</td>
+                        <td>{{p.prix}}</td>
+                        <td>{{p.image}}</td>
+                        <td>{{p. qte_stock}}</td>
+                        <td>{{p.etat}}</td>
+                        <td>
+                        <button (click)="ModifierProduit(p.ref)"class="btn btn-success">Modifier</button>
+                        <button (click)="SupprimerProduit(p.ref)" class="btn btn-danger" style="margin-left:10px">Supprimer</button>
+                        <button  class="btn btn-info" style="margin-left:10px">Détails</button>
+                    </td>
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
